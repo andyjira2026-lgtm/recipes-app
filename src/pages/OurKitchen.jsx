@@ -4,7 +4,7 @@ export default function OurKitchen() {
   return (
     <Layout>
       <h2 style={h2}>Our Kitchen</h2>
-      <img src="/images/our-kitchen2.png" alt="Our Kitchen" style={img} />
+      <img src={`${import.meta.env.BASE_URL}images/our-kitchen2.png`} alt="Our Kitchen" style={img} />
       <img src={`${import.meta.env.BASE_URL}images/our-kitchen.png`} alt="Chef placing a carrot into a large pot" style={img} />
     </Layout>
   );

@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 
+const BASE = import.meta.env.BASE_URL;
 const CHEFS = [
-  { id: 1, name: 'Chef 1', img: '/images/chef1.png' },
-  { id: 2, name: 'Chef 2', img: '/images/chef2.png' },
-  { id: 3, name: 'Chef 3', img: '/images/chef3.png' },
-  { id: 4, name: 'Chef 4', img: '/images/chef4.png' },
+  { id: 1, name: 'Chef 1', img: `${BASE}images/chef1.png` },
+  { id: 2, name: 'Chef 2', img: `${BASE}images/chef2.png` },
+  { id: 3, name: 'Chef 3', img: `${BASE}images/chef3.png` },
+  { id: 4, name: 'Chef 4', img: `${BASE}images/chef4.png` },
 ];
 
 export default function MeetTheChefs() {
@@ -30,7 +31,7 @@ export default function MeetTheChefs() {
         ))}
       </div>
 
-      <img src="/images/our-chefs2.png" alt="Our Chefs" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '32px', display: 'block' }} />
+      <img src={`${import.meta.env.BASE_URL}images/our-chefs2.png`} alt="Our Chefs" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '32px', display: 'block' }} />
 
       {lightbox && (
         <div style={styles.overlay} onClick={() => setLightbox(null)}>

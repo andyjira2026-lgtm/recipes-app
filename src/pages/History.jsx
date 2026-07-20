@@ -5,7 +5,7 @@ export default function History() {
     <Layout>
       <h2 style={h2}>History</h2>
       <img src={`${import.meta.env.BASE_URL}images/history2.png`} alt="History" style={img} />
-      <img src="/images/history.png"  alt="History" style={img} />
+      <img src={`${import.meta.env.BASE_URL}images/history.png`}  alt="History" style={img} />
     </Layout>
   );
 }
