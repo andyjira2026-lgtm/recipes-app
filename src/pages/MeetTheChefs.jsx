@@ -14,7 +14,7 @@ export default function MeetTheChefs() {
   return (
     <Layout>
       <h2 style={{ fontSize: '1.8rem', fontWeight: 700, color: '#f97316', marginBottom: '24px' }}>Meet the Chefs</h2>
-      <img src="/images/our-chefs.png" alt="Our Chefs" style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '32px', display: 'block' }} />
+      <img src={`${import.meta.env.BASE_URL}images/our-chefs.png`} alt="Our Chefs" style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '32px', display: 'block' }} />
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
         {CHEFS.map(chef => (
